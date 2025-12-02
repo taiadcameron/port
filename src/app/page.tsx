@@ -2,14 +2,37 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaXTwitter } from "react-icons/fa6";
 import { CiFacebook, CiLinkedin, CiMail } from "react-icons/ci";
 import { SlSocialBehance } from "react-icons/sl";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaLinkedin, FaBehance, FaEnvelope } from "react-icons/fa";
+import { useState, useEffect, ReactNode } from "react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
+
+// --- Types ---
+type TabId = "work" | "about" | "education" | "connect";
+type WorkFilter = "all" | "websites" | "marketing";
+
+interface WorkImage {
+  id: string;
+  src: string;
+  categories: string[];
+  title: string;
+  client: string;
+  year: string;
+}
+
+interface Tab {
+  id: TabId;
+  label: string;
+}
+
+interface AnimatedTextProps {
+  text: string;
+  delay?: number;
+  shouldAnimate?: boolean;
+}
+
 // 1. Container: Controls the staggering order
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -25,7 +48,7 @@ const containerVariants = {
 };
 
 // 2. Item: The smooth slide-up animation
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -38,9 +61,9 @@ const itemVariants = {
 };
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState("work");
-  const [workFilter, setWorkFilter] = useState("all");
-  const [shouldAnimate, setShouldAnimate] = useState(true);
+  const [activeTab, setActiveTab] = useState<TabId>("work");
+  const [workFilter, setWorkFilter] = useState<WorkFilter>("all");
+  const [shouldAnimate, setShouldAnimate] = useState<boolean>(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -49,7 +72,7 @@ export default function Home() {
     return () => clearTimeout(timer);
   }, []);
 
-  const tabs = [
+  const tabs: Tab[] = [
     { id: "work", label: "Work" },
     { id: "about", label: "About" },
     { id: "education", label: "Experience & Education" },
@@ -57,7 +80,7 @@ export default function Home() {
   ];
 
   // Work images data
-  const workImages = [
+  const workImages: WorkImage[] = [
     {
       id: "martial-arts-website",
       src: "/work/hero (1).png",
@@ -130,7 +153,11 @@ export default function Home() {
       : workImages.filter((img) => img.categories.includes(workFilter));
 
   // Text animation component for the header
-  const AnimatedText = ({ text, delay = 0, shouldAnimate = true }) => {
+  const AnimatedText = ({
+    text,
+    delay = 0,
+    shouldAnimate = true,
+  }: AnimatedTextProps) => {
     const words = text.split(" ");
     if (!shouldAnimate) return <span>{text}</span>;
 
@@ -196,7 +223,7 @@ export default function Home() {
                     key="Email"
                     className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
                   />,
-                ].map((icon, index) => (
+                ].map((icon: ReactNode, index: number) => (
                   <motion.div
                     key={index}
                     whileHover={{ scale: 1.2, rotate: 5 }}
@@ -237,7 +264,9 @@ export default function Home() {
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id)}
                     className="px-2 sm:px-3 md:px-4 py-2 rounded-lg text-xs sm:text-sm relative transition-colors duration-300 cursor-pointer"
-                    style={{ color: activeTab === tab.id ? "black" : "white" }}
+                    style={{
+                      color: activeTab === tab.id ? "black" : "white",
+                    }}
                   >
                     {activeTab === tab.id && (
                       <motion.div
@@ -282,27 +311,29 @@ export default function Home() {
                     className="flex w-full items-start"
                   >
                     <div className="flex gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm relative overflow-x-auto pb-2 w-full">
-                      {["all", "websites", "marketing"].map((filter) => (
-                        <button
-                          key={filter}
-                          onClick={() => setWorkFilter(filter)}
-                          className="relative capitalize whitespace-nowrap cursor-pointer hover:text-gray-300 transition-colors"
-                        >
-                          {filter}
-                          {workFilter === filter && (
-                            <motion.div
-                              layoutId="workFilterUnderline"
-                              className="absolute left-0 right-0 h-[1px] bg-white bottom-[-4px]"
-                              transition={{
-                                type: "spring",
-                                stiffness: 380,
-                                damping: 30,
-                              }}
-                              style={{ originY: "0px" }}
-                            />
-                          )}
-                        </button>
-                      ))}
+                      {(["all", "websites", "marketing"] as WorkFilter[]).map(
+                        (filter) => (
+                          <button
+                            key={filter}
+                            onClick={() => setWorkFilter(filter)}
+                            className="relative capitalize whitespace-nowrap cursor-pointer hover:text-gray-300 transition-colors"
+                          >
+                            {filter}
+                            {workFilter === filter && (
+                              <motion.div
+                                layoutId="workFilterUnderline"
+                                className="absolute left-0 right-0 h-[1px] bg-white bottom-[-4px]"
+                                transition={{
+                                  type: "spring",
+                                  stiffness: 380,
+                                  damping: 30,
+                                }}
+                                style={{ originY: "0px" }}
+                              />
+                            )}
+                          </button>
+                        )
+                      )}
                     </div>
                   </motion.div>
 
@@ -559,7 +590,7 @@ export default function Home() {
 
                     <div className="flex flex-col gap-8">
                       <div>
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 ">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2  ">
                           <motion.h4
                             variants={itemVariants}
                             className="text-lg sm:text-xl text-white"
@@ -759,7 +790,7 @@ export default function Home() {
                           Email
                         </h3>
                         <p className="text-sm text-gray-400 font-medium">
-                          Tadc936@gmail.com
+                          [Tadc936@gmail.com](mailto:Tadc936@gmail.com)
                         </p>
                       </div>
                     </motion.a>
