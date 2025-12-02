@@ -714,7 +714,7 @@ export default function Home() {
                       className="mb-6 sm:mb-8  sm:text-left"
                     >
                       <h2 className=" text-gray-300 text-sm leading-snug text-left">
-                        Let's connect—I'd love to discuss how I can contribute
+                        Let's connect, I'd love to discuss how I can contribute
                         to your team.
                       </h2>
                     </motion.div>
