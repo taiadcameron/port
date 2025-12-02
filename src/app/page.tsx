@@ -311,7 +311,7 @@ export default function Home() {
                   initial="hidden"
                   animate="visible"
                   exit="exit"
-                  className="flex justify-center items-center flex-col gap-4 sm:gap-6 md:gap-8"
+                  className="flex justify-center items-center flex-col gap-4 sm:gap-6 md:gap-8 mb-24"
                 >
                   {/* Filter Buttons */}
                   <motion.div
