@@ -208,21 +208,29 @@ export default function Home() {
               {/* 2. Social Icons */}
               <motion.div variants={itemVariants} className="flex gap-4 mt-4">
                 {[
-                  <CiLinkedin
-                    size={30}
-                    key="Linkedin"
-                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                  />,
-                  <SlSocialBehance
-                    size={30}
-                    key="Behance"
-                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                  />,
-                  <CiMail
-                    size={30}
-                    key="Email"
-                    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                  />,
+                  <a href="https://www.linkedin.com/in/tai-cameron">
+                    <CiLinkedin
+                      size={30}
+                      key="Linkedin"
+                      className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                    />
+                  </a>,
+
+                  <a href="https://www.behance.net/taicameron">
+                    <SlSocialBehance
+                      size={30}
+                      key="Behance"
+                      className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                    />
+                  </a>,
+
+                  <a href="mailto:tadc936@gmail.com">
+                    <CiMail
+                      size={30}
+                      key="Email"
+                      className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8"
+                    />
+                  </a>,
                 ].map((icon: ReactNode, index: number) => (
                   <motion.div
                     key={index}
@@ -713,7 +721,7 @@ export default function Home() {
 
                     {/* 1. LinkedIn */}
                     <motion.a
-                      href="https://linkedin.com/in/taicameron" // Update with your actual URL
+                      href="https://linkedin.com/in/tai-cameron" // Update with your actual URL
                       target="_blank"
                       rel="noopener noreferrer"
                       variants={itemVariants}
@@ -790,7 +798,7 @@ export default function Home() {
                           Email
                         </h3>
                         <p className="text-sm text-gray-400 font-medium">
-                          [Tadc936@gmail.com](mailto:Tadc936@gmail.com)
+                          Tadc936@gmail.com
                         </p>
                       </div>
                     </motion.a>
