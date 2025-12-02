@@ -55,7 +55,7 @@ export const projects: Record<string, ProjectData> = {
     thumbnail: "/work/mma/img (1).png",
 
     overview:
-      "A sleek, professional website designed to position the MMA gym as a community-focused, premium martial arts destination. The design emphasizes a minimalist aesthetic with clean lines, intuitive navigation, and a visual hierarchy tailored to appeal to parents of young learners.",
+      "A sleek, professional website designed to position the MMA gym as a community focused, premium martial arts destination. The design emphasizes a minimalist aesthetic with clean lines, intuitive navigation, and a visual hierarchy tailored to appeal to parents of young learners.",
     problem:
       "The MMA gym was a newly opened facility with no existing online presence. The challenge was to attract local families and establish credibility quickly in a competitive market.",
     goals: [
@@ -64,27 +64,17 @@ export const projects: Record<string, ProjectData> = {
       "Create a straightforward, engaging user experience.",
     ],
     approach:
-      "Focusing on a minimal, luxury-inspired design, I tailored the UI to be simple, direct, and kid-friendly. Local SEO was integrated with tailored location and service pages.",
+      "Focusing on a minimal, luxury inspired design, I tailored the UI to be simple, direct, and accessible to everyone. Local SEO was integrated with tailored location and service pages.",
     features: [
       "Class Schedule & Booking",
       "Targeted Local SEO & Service Pages",
       "Kids & Parent Sections",
       "Poster & Flyer Designs",
     ],
-    challenges: [
-      {
-        challenge: "Personalization complexity when targeting families",
-        solution: "Developed a straightforward, visually appealing UI.",
-      },
-    ],
-    technicalDetails:
-      "Built with Framer and React, utilizing custom animations.",
-    results: ["Increased membership sign-ups by 292%."],
-    learnings:
-      "This project reinforced the importance of user research in driving design decisions.",
+
     services: ["Web Design", "SEO Optimization"],
-    technologies: ["Framer", "Figma", "React", "SEMrush", "Moz"],
-    link: "https://example.com",
+    technologies: ["Framer", "Figma", "React", "SEMrush"],
+    link: "https://mortonmartialarts.com",
     images: [
       "/work/mma/img (1).png",
       "/work/mma/img (2).png",
@@ -102,12 +92,12 @@ export const projects: Record<string, ProjectData> = {
     hero: "/work/ls/img (1).png",
     thumbnail: "/work/ls/img (1).png",
     overview:
-      "A minimalist, elegant website designed to evoke the luxury and exquisite taste of artisan smoked salmon.",
+      "A premium artisan smoked salmon producer needed a digital presence that matched the quality of their product. The challenge was creating an online experience as refined as their offerings. The solution: a minimalist, elegant website that combines luxury aesthetics with intuitive functionality, establishing a compelling digital brand presence.",
     problem:
       "The smoked salmon artisan had no digital presence and needed an online platform to showcase their premium products.",
     goals: ["Showcase products", "Highlight awards", "Enable orders"],
     approach:
-      "Minimalist style balancing aesthetic appeal with functional clarity.",
+      "We utilized a minimalist design strategy, focusing on negative space and typography to evoke sophistication. The development workflow moved from high-fidelity prototyping in Figma to production in Framer.",
     features: [
       "Product Showcase",
       "Order Form",
@@ -125,7 +115,7 @@ export const projects: Record<string, ProjectData> = {
     learnings: "Reinforced blending simplicity with storytelling.",
     services: ["Web Design", "UI/UX Design"],
     technologies: ["Framer", "Figma"],
-    link: "https://example.com",
+    link: "https://www.lochandstock.co.uk/",
     images: [
       "/work/ls/img (1).png",
       "/work/ls/img (2).png",
@@ -139,14 +129,15 @@ export const projects: Record<string, ProjectData> = {
     year: "2025",
     role: "Web Designer & Developer",
     categories: ["websites"],
-    hero: "/work/hero (3).png",
-    thumbnail: "/work/hero (3).png",
+    hero: "/work/kc/img (1).png",
+    thumbnail: "/work/kc/img (1).png",
     overview:
-      "A minimal, professional, and modern website designed with innovative flair.",
+      "A digital design agency establishing its market presence through a portfolio driven website. Built to showcase technical capabilities and creative vision, the site combines minimalist aesthetics with dynamic animations to engage prospective clients and communicate service expertise with clarity and innovation.",
     problem:
       "Goal was to build a strong digital presence to attract potential clients.",
     goals: ["Showcase portfolio", "Communicate services", "Impress visitors"],
-    approach: "Clean aesthetic fused with dynamic animations.",
+    approach:
+      "Blending minimalist design with dynamic animations using Framer Motion to create an engaging user experience that highlights the agency's creative and technical skills.",
     features: ["Portfolio Gallery", "Contact Pages", "Animated UI"],
     challenges: [
       {
@@ -158,60 +149,75 @@ export const projects: Record<string, ProjectData> = {
     results: ["Significantly enhanced development skills."],
     learnings: "Gained expertise in front-end animation.",
     services: ["Web Design"],
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    link: "https://example.com",
-    images: ["/work/hero (3).png", "/work/hero (3).png", "/work/hero (3).png"],
+    technologies: [
+      "Next.js",
+      "Tailwind   CSS",
+      "Motion",
+      "Figma",
+      "TypeScript",
+    ],
+    link: "https://ketercreative.com",
+    images: [
+      "/work/kc/img (1).png",
+      "/work/kc/img (2).png",
+      "/work/kc/img (3).png",
+      "/work/kc/img (4).png",
+      "/work/kc/img (5).png",
+    ],
   },
   "legal-services-site": {
-    title: "Legal Services Site",
-    client: "Chambers Law",
+    title: "Medinalegal Website",
+    client: "Medinalegal",
     year: "2025",
     role: "Web Designer & Developer",
     categories: ["framer", "code"],
     hero: "/work/med/img (1).png",
     thumbnail: "/work/med/img (1).png",
-    overview: "A trustworthy, professional, and authoritative website.",
+    overview:
+      "A Spanish law firm serving international expatriates required a digital presence that conveyed trust and professionalism. The website balances authoritative design with accessible navigation, clearly presenting legal services and expertise to help foreign clients navigate Spanish law with confidence and clarity.",
     problem: "The firm faced a dated, ineffective website.",
     goals: ["Enhance image", "Showcase services", "Build trust"],
-    approach: "Focused on clarity and professionalism.",
+    approach:
+      "Prioritizing clarity, trust, and professionalism through clean typography, intuitive navigation, and strategic service presentation that makes complex legal information accessible to international clients.",
     features: ["Services Pages", "Client Testimonials", "Blog"],
     technicalDetails: "Designed in Figma, developed in Framer.",
     results: ["Demonstrates refined UI/UX capabilities."],
     learnings: "Gained experience with Framer.",
     services: ["UI/UX Design"],
     technologies: ["Framer", "Figma"],
-    link: "https://example.com",
+    link: "https://medinalegal.es/",
     images: [
       "/work/med/img (1).png",
       "/work/med/img (2).png",
       "/work/med/img (3).png",
       "/work/med/img (4).png",
       "/work/med/img (5).png",
-      "/work/med/img (6).png",
     ],
   },
   "landscaping-website": {
-    title: "E-commerce Platform",
-    client: "Urban Style",
+    title: "Verdant Lux Landscapes",
+    client: "Verdant Lux Landscapes",
     year: "2024",
     role: "Full-Stack Developer",
     categories: ["designs", "code"],
     hero: "/work/vl/img (1).png",
     thumbnail: "/work/vl/img (1).png",
-    overview: "Modern e-commerce platform with cart functionality.",
+    overview:
+      "A luxury landscaping company’s digital platform designed to attract high-end clients and showcase premium outdoor services. The website leverages clean, sophisticated design, immersive project galleries, and intuitive navigation to present the company’s expertise and unique value.",
     problem: "Needed to expand from physical retail to online sales.",
     goals: ["Build scalable solution", "Integrate payments"],
-    approach: "Designed comprehensive product management system.",
-    features: ["Smart Cart", "Payment Integration", "Inventory Sync"],
+    approach:
+      "The site emphasizes visual storytelling through a curated portfolio, clear service descriptions, and easy contact pathways, using high quality imagery and a nature inspired color palette to convey professionalism, trust, and an elevated brand experience.",
+    features: ["Blog", "Service Showcase", "Contact Form", "Work Portolio"],
     challenges: [
       { challenge: "Inventory sync", solution: "Real-time webhooks." },
     ],
     technicalDetails: "Built with Next.js, MongoDB, Stripe.",
     results: ["Revenue grew to $45K/mo"],
     learnings: "E-commerce requires robust error handling.",
-    services: ["Full-Stack Dev", "SEO"],
-    technologies: ["Next.js", "Stripe", "MongoDB", "Tailwind"],
-    link: "https://example.com",
+    services: ["Framer", "Figma"],
+    technologies: ["Framer", "Figma"],
+    link: "https://verdantluxelandscapes.framer.website",
     images: [
       "/work/vl/img (1).png",
       "/work/vl/img (2).png",
@@ -225,23 +231,25 @@ export const projects: Record<string, ProjectData> = {
   },
   "landscaping-landing-page": {
     title: "The Green Oasis",
-    client: "Template",
+    client: "The Green Oasis",
     year: "2024",
     role: "Web Designer",
     categories: ["website"],
     hero: "/work/go/img (1).png",
     thumbnail: "/work/go/img (1).png",
-    overview: "A visually clean and eco-friendly landing page.",
+    overview:
+      "A conceptual landing page design exploring eco friendly landscaping aesthetics. The template demonstrates clean visual hierarchy and strategic content placement to effectively showcase landscaping services while maintaining an inviting, nature-focused design language.​",
     problem: "Conceptual exercise to explore landing page design.",
     goals: ["Create compelling layout", "Showcase services"],
-    approach: "Competitor analysis informed layout decisions.",
-    features: ["Service Highlights", "Portfolio", "Contact Form"],
+    approach:
+      "Informed by competitor analysis, the design prioritizes visual storytelling through hero imagery, intuitive service presentation, and clear calls to action, establishing effective content hierarchy that guides visitors naturally through the conversion path.",
+    features: ["Testimonials", "Services", "Contact Form"],
     technicalDetails: "Prototyped in Figma and Framer.",
     results: ["Reinforced clean design principles."],
     learnings: "Importance of content hierarchy.",
     services: ["UI/UX Design"],
     technologies: ["Framer", "Figma"],
-    link: "https://example.com",
+    link: "https://thegreenoasis.framer.website",
     images: [
       "/work/go/img (1).png",
       "/work/go/img (2).png",
@@ -250,16 +258,18 @@ export const projects: Record<string, ProjectData> = {
   },
   "club-app": {
     title: "Join The Club",
-    client: "SAE Project",
+    client: "Join The Club",
     year: "2025",
     role: "Full Stack Developer",
     categories: ["websites"],
-    hero: "/work/hero (7).png",
-    thumbnail: "/work/hero (7).png",
-    overview: "Student-focused web app for campus life.",
+    hero: "/work/jtc/img (1).png",
+    thumbnail: "/work/jtc/img (1).png",
+    overview:
+      "School club management web application Join The Club. Created during my university studies to help clubs manage events and memberships more effectively.",
     problem: "Clubs struggle with visibility and communication.",
     goals: ["Central hub", "Easy discovery", "Seamless management"],
-    approach: "Research identified pain points; solution was a CMS + Portal.",
+    approach:
+      "Developed a full-stack solution with user friendly interfaces for both students and club admins, focusing on intuitive navigation and efficient data management to streamline club operations and enhance member engagement. (Login only available with .edu email)",
     features: ["Event Portal", "CMS Dashboard", "Profiles"],
     challenges: [
       { challenge: "Fast rendering", solution: "Full-stack JS architecture." },
@@ -268,22 +278,37 @@ export const projects: Record<string, ProjectData> = {
     results: ["Leads increased by 500%"],
     learnings: "Deepened full-stack expertise.",
     services: ["Web App Dev", "Brand Strategy"],
-    technologies: ["Next.js", "MongoDB", "Express"],
-    link: "https://example.com",
-    images: ["/work/hero (7).png", "/work/hero (7).png", "/work/hero (7).png"],
+    technologies: [
+      "Next.js",
+      "MongoDB",
+      "Express",
+      "Node.js",
+      "Tailwind CSS",
+      "Figma",
+    ],
+    link: "https://jtc-flax.vercel.app/",
+    images: [
+      "/work/jtc/img (1).png",
+      "/work/jtc/img (2).png",
+      "/work/jtc/img (3).png",
+      "/work/jtc/img (4).png",
+      "/work/jtc/img (5).png",
+    ],
   },
   "music-documentary-website": {
     title: "Music Through The Lens",
-    client: "SAE Film Students",
+    client: "Music Through The Lens",
     year: "2025",
     role: "Web Designer",
     categories: ["websites"],
     hero: "/work/mttl/img (1).png",
     thumbnail: "/work/mttl/img (1).png",
-    overview: "Cinematic website for a concert photography documentary.",
+    overview:
+      "A cinematic digital platform created for film students to showcase their concert photography documentary. The website merges immersive visual storytelling with functional design, presenting the documentary project, filmmaker profiles, and behind the scenes content in an engaging, media-rich experience.​",
     problem: "Needed digital presence with zero budget.",
     goals: ["Showcase doc", "Enable contact", "SEO strategy"],
-    approach: "Tailored distinct user personas.",
+    approach:
+      "Designed around distinct user personas fans, industry professionals, and fellow filmmakers the site prioritizes high-quality imagery, seamless navigation, and dynamic animations to create an authentic, emotionally resonant experience that reflects the documentary's artistic vision.",
     features: ["Immersive Gallery", "Filmmaker Profiles", "Newsletter"],
     challenges: [
       { challenge: "Zero budget", solution: "Organic social strategy." },
@@ -292,8 +317,8 @@ export const projects: Record<string, ProjectData> = {
     results: ["Successfully launched platform."],
     learnings: "Understanding audience deeply.",
     services: ["Web Design", "SEO"],
-    technologies: ["React", "Node.js", "Framer Motion"],
-    link: "https://example.com",
+    technologies: ["React", "Node.js", "Motion", "Figma", "MongoDB", "Express"],
+    link: "https://mttl.onrender.com/",
     images: [
       "/work/mttl/img (1).png",
       "/work/mttl/img (2).png",

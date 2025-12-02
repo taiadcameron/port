@@ -242,7 +242,7 @@ export default function ProjectPage() {
                 transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
               >
                 <div>
-                  <h3 className="text-xs text-gray-500 mb-4 mt-4 uppercase tracking-wider font-semibold">
+                  <h3 className="text-xs text-gray-500 mb-4 uppercase tracking-wider font-semibold">
                     Tech Stack
                   </h3>
                   <div className="flex flex-wrap gap-2 text-sm font-mono text-gray-300">
