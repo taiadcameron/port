@@ -1,9 +1,10 @@
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Tai Cameron - Web Designer & Developer",
   description: "Portfolio showcasing web design and development work",
 };
