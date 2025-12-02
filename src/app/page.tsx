@@ -84,7 +84,7 @@ export default function Home() {
     {
       id: "martial-arts-website",
       src: "/work/hero (1).png",
-      categories: ["websites", "marketing"],
+      categories: ["framer"],
       title: "Martial Arts Website",
       client: "Morton Martial Arts",
       year: "2025",
@@ -92,7 +92,7 @@ export default function Home() {
     {
       id: "smoked-salmon-website",
       src: "/work/hero (4).png",
-      categories: ["websites", "marketing"],
+      categories: ["framer"],
       title: "Smoked Salmon Website",
       client: "Loch Stock & Two Smoking Barrels",
       year: "2024",
@@ -100,7 +100,7 @@ export default function Home() {
     {
       id: "agency-website",
       src: "/work/hero (5).png",
-      categories: ["websites"],
+      categories: ["coded"],
       title: "Agency Website",
       client: "Keter Creative",
       year: "2025",
@@ -108,7 +108,7 @@ export default function Home() {
     {
       id: "legal-services-site",
       src: "/work/hero (6).png",
-      categories: ["websites"],
+      categories: ["framer"],
       title: "Legal Website",
       client: "Medinalegal",
       year: "2025",
@@ -116,7 +116,7 @@ export default function Home() {
     {
       id: "landscaping-website",
       src: "/work/hero (8).png",
-      categories: ["websites"],
+      categories: ["framer"],
       title: "Landscaping Website",
       client: "Verdant Luxe Landscapes",
       year: "2025",
@@ -124,7 +124,7 @@ export default function Home() {
     {
       id: "landscaping-landing-page",
       src: "/work/hero (7).png",
-      categories: ["websites"],
+      categories: ["framer"],
       title: "Landscaping Landing Page",
       client: "The Green Oasis",
       year: "2024",
@@ -132,7 +132,7 @@ export default function Home() {
     {
       id: "club-app",
       src: "/work/hero (3).png",
-      categories: ["websites"],
+      categories: ["coded"],
       title: "Club App",
       client: "Join The Club",
       year: "2025",
@@ -140,7 +140,7 @@ export default function Home() {
     {
       id: "music-documentary-website",
       src: "/work/hero (2).png",
-      categories: ["websites"],
+      categories: ["coded"],
       title: "Music Documentary Website",
       client: "Music Through The Lens",
       year: "2025",
@@ -319,7 +319,7 @@ export default function Home() {
                     className="flex w-full items-start"
                   >
                     <div className="flex gap-4 sm:gap-6 md:gap-8 text-xs sm:text-sm relative overflow-x-auto pb-2 w-full">
-                      {(["all", "websites", "marketing"] as WorkFilter[]).map(
+                      {(["all", "framer", "coded"] as WorkFilter[]).map(
                         (filter) => (
                           <button
                             key={filter}
