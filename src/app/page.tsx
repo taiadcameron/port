@@ -83,7 +83,7 @@ export default function Home() {
   const workImages: WorkImage[] = [
     {
       id: "martial-arts-website",
-      src: "/work/hero (1).png",
+      src: "/work/mma/img (1).png",
       categories: ["framer"],
       title: "Martial Arts Website",
       client: "Morton Martial Arts",
@@ -91,7 +91,7 @@ export default function Home() {
     },
     {
       id: "smoked-salmon-website",
-      src: "/work/hero (4).png",
+      src: "/work/ls/img (1).png",
       categories: ["framer"],
       title: "Smoked Salmon Website",
       client: "Loch Stock & Two Smoking Barrels",
@@ -99,7 +99,7 @@ export default function Home() {
     },
     {
       id: "agency-website",
-      src: "/work/hero (5).png",
+      src: "/work/kc/img (1).png",
       categories: ["coded"],
       title: "Agency Website",
       client: "Keter Creative",
@@ -107,7 +107,7 @@ export default function Home() {
     },
     {
       id: "legal-services-site",
-      src: "/work/hero (6).png",
+      src: "/work/med/img (1).png",
       categories: ["framer"],
       title: "Legal Website",
       client: "Medinalegal",
@@ -115,7 +115,7 @@ export default function Home() {
     },
     {
       id: "landscaping-website",
-      src: "/work/hero (8).png",
+      src: "/work/vl/img (1).png",
       categories: ["framer"],
       title: "Landscaping Website",
       client: "Verdant Luxe Landscapes",
@@ -123,7 +123,7 @@ export default function Home() {
     },
     {
       id: "landscaping-landing-page",
-      src: "/work/hero (7).png",
+      src: "/work/go/img (1).png",
       categories: ["framer"],
       title: "Landscaping Landing Page",
       client: "The Green Oasis",
@@ -131,7 +131,7 @@ export default function Home() {
     },
     {
       id: "club-app",
-      src: "/work/hero (3).png",
+      src: "/work/jtc/img (1).png",
       categories: ["coded"],
       title: "Club App",
       client: "Join The Club",
@@ -139,11 +139,11 @@ export default function Home() {
     },
     {
       id: "music-documentary-website",
-      src: "/work/hero (2).png",
+      src: "/work/mttl/img (1).png",
       categories: ["coded"],
       title: "Music Documentary Website",
       client: "Music Through The Lens",
-      year: "2025",
+      year: "2024",
     },
   ];
 
