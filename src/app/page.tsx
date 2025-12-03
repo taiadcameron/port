@@ -631,7 +631,14 @@ export default function Home() {
                           </motion.li>
                         </div>
                       </div>
-                      <div className="w-full h-[1px] bg-gray-400"></div>
+                      <motion.div
+                        viewport={{ once: true }}
+                        whileInView={{ scaleX: 1 }}
+                        initial={{ scaleX: 0 }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        style={{ originX: 0, height: "1px", width: "100%" }}
+                        className="w-full h-[1px] bg-gray-400"
+                      ></motion.div>
                       <div>
                         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2  ">
                           <motion.h4
@@ -707,7 +714,7 @@ export default function Home() {
                   exit="exit"
                   className="flex flex-col gap-2 max-w-3xl mx-auto "
                 >
-                  <div className="w-[70%]">
+                  <div className="md:w-[70%]">
                     {/* Header Text */}
                     <motion.div
                       variants={itemVariants}
