@@ -68,7 +68,7 @@ export const projects: Record<string, ProjectData> = {
     features: [
       "Class Schedule & Booking",
       "Targeted Local SEO & Service Pages",
-      "Kids & Parent Sections",
+      "Disciplines Overview",
       "Poster & Flyer Designs",
     ],
 
@@ -81,6 +81,8 @@ export const projects: Record<string, ProjectData> = {
       "/work/mma/img (3).png",
       "/work/mma/img (4).png",
       "/work/mma/img (5).png",
+      "/work/mma/img (6).png",
+      "/work/mma/img (7).png",
     ],
   },
   "smoked-salmon-website": {

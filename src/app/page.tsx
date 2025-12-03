@@ -194,7 +194,7 @@ export default function Home() {
             initial={shouldAnimate ? "hidden" : "visible"}
             animate="visible"
           >
-            <div className="md:w-[70%]">
+            <div className="w-full md:w-[70%]">
               {/* 1. Profile Image */}
               <motion.div variants={itemVariants}>
                 <Image
@@ -265,7 +265,7 @@ export default function Home() {
               {/* 5. Tab Buttons */}
               <motion.div
                 variants={itemVariants}
-                className="flex mt-6 sm:mt-8 justify-between w-full gap-1 sm:gap-2"
+                className="flex mt-6 sm:mt-8 justify-between w-full md:gap-2"
               >
                 {tabs.map((tab) => (
                   <button
@@ -429,14 +429,14 @@ export default function Home() {
                     >
                       My interest in web development stems from its combination
                       of artistic design and technical skill. I focus on clean
-                      UI/UX, minimalist design, and SEO practices to create
+                      UI/UX, minimalist design, and key SEO practices to create
                       aesthetically pleasing websites that convert.
                     </motion.p>
                     <motion.p
                       variants={itemVariants}
                       className="text-base text-gray-300 leading-relaxed"
                     >
-                      Outside of websites and SEO, I practice Brazilian Jiu
+                      Outside of websites and SEO, my hobbies are Brazilian Jiu
                       Jitsu and photography. These practices have instilled
                       discipline and awareness in me, which allows me to view
                       situations from various perspectives, enhancing my approch
@@ -548,10 +548,12 @@ export default function Home() {
                           variants={itemVariants}
                           className="text-base text-gray-300"
                         >
-                          Comprehensive program covering modern web
-                          technologies, UX/UI design principles, and full-stack
-                          development. Focus on creating accessible, performant
-                          web applications.
+                          Industry focused web development degree blending code,
+                          design and digital marketing. Trained in building
+                          responsive sites and web applications with front end
+                          and back end technologies while integrating UX/UI best
+                          practices, SEO and digital marketing strategy into
+                          every project.
                         </motion.p>
                       </div>
                       <div className="flex flex-col gap-2">
@@ -573,10 +575,11 @@ export default function Home() {
                           variants={itemVariants}
                           className="text-base text-gray-300"
                         >
-                          Comprehensive program covering modern web
-                          technologies, UX/UI design principles, and full-stack
-                          development. Focus on creating accessible, performant
-                          web applications.
+                          Foundation level computing qualification covering
+                          hardware, networking, programming, databases and web
+                          development. Developed core technical skills through
+                          hands on projects including building computer systems,
+                          creating databases and developing web apps
                         </motion.p>
                       </div>
                     </div>
@@ -615,12 +618,12 @@ export default function Home() {
                         <div className="text-gray-300 flex flex-col gap-2 text-base pl-2">
                           <motion.li variants={itemVariants}>
                             Designed and developed websites for local businesses
-                            including martial arts gyms and e-commerce clients,
-                            focusing on SEO optimization and conversion-focused
-                            layouts.
+                            including martial arts gyms and online storefront
+                            clients, focusing on SEO optimisation and conversion
+                            focused layouts.
                           </motion.li>
                           <motion.li variants={itemVariants}>
-                            Managed digital marketing and search optimization
+                            Managed digital marketing and search optimisation
                             strategies to improve client visibility and organic
                             traffic
                           </motion.li>
@@ -656,7 +659,7 @@ export default function Home() {
                         </div>
                         <div className="text-base text-gray-300 flex flex-col gap-2 pl-2">
                           <motion.li variants={itemVariants}>
-                            Teaching Brazilian Jiu-Jitsu to children, developing
+                            Teaching Brazilian Jiu Jitsu to children, developing
                             communication and mentorship skills
                           </motion.li>
                         </div>
@@ -695,11 +698,11 @@ export default function Home() {
                       </div>
                       <motion.p
                         variants={itemVariants}
-                        className="text-sm text-gray-300"
+                        className=" text-gray-300"
                       >
                         Advanced SEO course focusing on keyword research,
-                        content optimization, and search intent analysis for
-                        local businesses
+                        content optimisation, and search intent analysis for
+                        businesses.
                       </motion.p>
                     </div>
                   </motion.div>
